@@ -11,7 +11,7 @@ class CSVGenerator {
     }
 }
 
-public class task1 {
+public class task2 {
     public static void main(String[] args) {
         String[] headers = new String[]{"Name", "Age", "City"};
         String[][] data = new String[][]{
