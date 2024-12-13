@@ -11,6 +11,7 @@ public class task3 {
 
         for (String line : splitted_arg) {
             if (!line.trim().isEmpty()) {
+                // Форматирования текста
                 if (sb.length() > 0) {
                     sb.append("\n");
                 }
