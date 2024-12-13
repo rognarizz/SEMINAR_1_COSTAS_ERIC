@@ -1,0 +1,4 @@
+дек. 13, 2024 3:02:19 PM task4 LoggingYourValue
+INFO: Максимальное значение 9 и минимальное 1
+дек. 13, 2024 3:02:19 PM task4 LoggingYourValue
+SEVERE: Произошло арифметическое исключение: / by zero
