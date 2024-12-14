@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.Arrays;
 
 public class task4 {
     public static void main(String[] args) {
@@ -15,26 +14,23 @@ public class task4 {
             arr[i] = Integer.parseInt(input[i]);
         }
 
-        int MED = getMedian(arr);
+        int AVG_ari = getAVG_ari(arr);
 
-        System.out.println("Average value in your array: " + MED);
+        System.out.println("Average value in your array: " + AVG_ari);
     }
 
-    public static int getMedian(int[] arr) {
+    public static int getAVG_ari(int[] arr) {
         // *Находит среднее значение среди чисел в массиве */
-        int MED;
-
-        Arrays.sort(arr);
-
-        int middle = arr.length / 2;
-
-        if (arr.length % 2 == 0) {
-            // если четное количество элементом, MED это целая часть среднего значения двух центральных элементов
-            MED = (arr[middle - 1] + arr[middle] / 2);
-        } else { // если не четное кол элементов, MED это центральный элемент
-            MED = arr[middle];
+        if ( arr.length == 0) {
+            return 0;
         }
-    
-        return MED;
+        
+        int AVG_ari = 0;
+
+        for (int num : arr) {
+            AVG_ari += num;
+        }
+
+        return (int) Math.round((double) AVG_ari / arr.length);
     }
 }
